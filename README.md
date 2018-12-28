@@ -12,7 +12,7 @@ Agora basta testar o funcionamento:
 ```
 $ docker build -t spark-lab .
 $ docker run -it spark-lab
-$ /App# spark-shell
+/App# spark-shell
 Spark assembly has been built with Hive, including Datanucleus jars on classpath
 Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
 18/12/28 00:40:19 INFO SecurityManager: Changing view acls to: root
