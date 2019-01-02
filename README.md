@@ -56,3 +56,12 @@ Type :help for more information.
 18/12/28 00:40:26 INFO SparkILoop: Created spark context..
 Spark context available as sc.
 ```
+
+# Primeiro script no shell
+
+```
+scala> val myFile = sc.textFile("spark-1.2.0-bin-hadoop2.4/README.md")
+myFile: org.apache.spark.rdd.RDD[String] = README.md MappedRDD[1] at textFile at <console>:12
+scala> myFile.count()
+res0: Long = 98
+```

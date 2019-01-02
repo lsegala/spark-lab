@@ -6,6 +6,7 @@ WORKDIR /App
 COPY *.tgz /App/
 RUN tar xvzf scala-2.10.4.tgz &&\
 	tar xvzf spark-1.2.0-bin-hadoop2.4.tgz
+COPY log4j.properties /App/spark-1.2.0-bin-hadoop2.4/conf
 ENV SCALA_HOME /App/scala-2.10.4
 ENV SPARK_HOME /App/spark-1.2.0-bin-hadoop2.4
 ENV PATH $PATH:$SCALA_HOME/bin:$SPARK_HOME/bin
