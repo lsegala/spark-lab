@@ -20,5 +20,6 @@ COPY log4j.properties /App/spark-1.2.0-bin-hadoop2.4/conf
 ENV SCALA_HOME /App/scala-2.10.4
 ENV SPARK_HOME /App/spark-1.2.0-bin-hadoop2.4
 ENV PATH $PATH:$SCALA_HOME/bin:$SPARK_HOME/bin
+ENV MAIN_CLASS SimpleApp
 
-CMD spark-submit  --class SimpleApp --master local /App/example-1/target/scala-2.10/simple-project_2.10-1.0.jar
+CMD spark-submit  --class $MAIN_CLASS --master local /App/example-1/target/scala-2.10/simple-project_2.10-1.0.jar
