@@ -1,4 +1,4 @@
-FROM leonardosegala/spark-scala
+FROM leonardosegala/spark-scala:latest
 COPY example-1 /App/example-1
 RUN cd /App/example-1 && sbt package
 

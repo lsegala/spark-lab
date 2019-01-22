@@ -19,6 +19,6 @@ object MapFilter {
       .map(m => m.length)
       .first))
     println("Normal first line %s".format(myTextFile.filter(p => p.length > 0).first))
-    println("Reversed first line".format(myTextFile.filter(p => p.length > 0).map(m => m.reverse).first))
+    println("Reversed first line %s".format(myTextFile.filter(p => p.length > 0).map(m => m.reverse).first))
   }
 }
